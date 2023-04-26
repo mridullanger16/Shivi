@@ -1,0 +1,355 @@
+<html>
+
+<head>
+  <title>This is my Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.google.com/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
+    viewBox="0 0 16 16">
+    <path
+      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+  </svg>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+    /* Styling for Navbar */
+    body {
+      display: block;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background-color: white;
+    }
+
+    nav li a:hover {
+      background-color: #060606ab;
+      color: #fff;
+    }
+
+    .navbar-brand img {
+      max-height: 50px;
+    }
+
+    .navbar-brand {
+      font-size: 39px;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: #535253;
+    }
+
+    nav ul li a {
+      color: #a9a9a9;
+      font-size: 22px;
+      margin: auto 10px;
+    }
+
+    nav ul li a:hover {
+      color: #000001;
+    }
+
+    /* Styling for Hero Section */
+    section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    section h1 {
+      text-transform: uppercase;
+      font-weight: 900;
+      color: #000000;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    button {
+      max-width: 50%;
+      border-radius: 50px !important;
+    }
+
+    #hero .col {
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+    }
+
+    #hero .img-col {
+      justify-content: flex-end;
+      margin-top: 100px;
+    }
+
+    #hero img {
+      max-width: 130%;
+      width: 130%;
+    }
+
+    /* Styling for the cards */
+    #hero .card {
+      box-shadow: 11px 7px 16px #1e1b1b;
+      border: 0;
+      text-align: center;
+    }
+
+    #hero .cards .card {
+      width: 25rem;
+    }
+
+    /* Styling for Icons if added */
+    #hero .icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+
+    /* Styling for the Project Section */
+    #projects .projects {
+      margin-bottom: 50px;
+    }
+
+    /* contact section styling */
+    #contact {
+      text-align: center;
+      background-color: #000000;
+      color: white;
+    }
+
+    #contact h1 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Style all font awesome icons */
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    /* Set a specific color for each brand */
+
+    /* Facebook */
+    .fa-facebook {
+      background: #000000;
+      color: rgb(6, 44, 196);
+      font-size: 100px;
+      size: 100px;
+    }
+
+    /* .fa-brands {
+
+} */
+
+    /* Twitter */
+    .fa-twitter {
+      background: #000000;
+      color: rgb(67, 96, 216);
+    }
+
+    .fa-instagram {
+      background: #000000;
+      color: rgb(234, 6, 44);
+    }
+
+    /* .fa-snapchat-ghost {
+  background:  #683aa4;
+  color: rgb(223, 208, 2);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+} */
+    .fa-linkedin {
+      background: #000000;
+      color: white;
+    }
+  </style>
+</head>
+<section id="Home"></section>
+
+<body>
+
+  <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+
+          <nav>
+            <li><a href="#Home">
+            <li class="nav-item1">
+              <a class="nav-link active" aria-current="page" href="#Home"><h5>Home</h5></a>
+            </li></a></li>
+
+
+          </nav>
+
+          <nav>
+            <li><a href="#Link">
+            <li class="nav-item">
+              <a class="nav-link" href="#Link"><h5>Link</h5></a>
+            </li></a></li>
+          </nav>
+
+          <nav>
+            <li><a href="#About-me">
+            <li class="nav-item">
+              <a class="nav-link" href="#About-me"><h5>About-me</h5></a>
+            </li></a></li>
+          </nav>
+          <nav>
+            <li><a href="#contact">
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><h5>Contact</h5></a>
+            </li></a></li>
+          </nav>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+
+
+
+  <section id="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Hi,<br>I am Mridul</h1>
+          <p><h5>As a rising senior at the University of Gujarat studying computer engineering, I have interests in music,
+            technology, sports, adventure, and riding!</h5></p>
+          <a href="Professional CV Resume (1).zip"> <button type="button" class="btn btn-dark btn-lg">DOWNLOAD CV.</button>
+          </a>
+        </div>
+        <div class="col">
+          <img src="MicrosoftTeams-image (6).png" alt="..." width="260px" height="750px">
+        </div>
+        <section id="Link"></section>
+      </div><br><br><br>
+
+      <div class="row cards">
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card">
+            <div class="card-body">
+
+
+              <!-- here is where they add the ICON -->
+              <img src="ffffff.jpg" alt="..." class="icon">
+              <h5 class="card-title">Skills</h5>
+              <p class="card-text"><h6>"I have a great skill for capturing important moments and scenes on camera and
+                telling stories through photographs."</h6></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card">
+            <div class="card-body">
+
+
+              <!-- here is where they add the ICON -->
+              <img src="royal.jpg" alt="..." class="icon">
+              <h5 class="card-title">Hobbies</h5>
+              <p class="card-text"><h6>"I enjoy music and consider myself a creative and practical person who enjoys working
+                with my hands. I'm outgoing and enjoy socializing, riding, exploring and hanging out with friends.
+                Additionally, I like to stay physically active and spend a lot of my time playing sports and team
+                games."</h6></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card">
+            <div class="card-body">
+
+
+              <!-- here is where they add the ICON -->
+              <img src="education.jpg" alt="..." class="icon">
+              <h5 class="card-title">Education</h5>
+              <p class="card-text"><h6>"I have completed my 12th grade and am currently pursuing Computer Engineering at
+                Ahmedabad Institute of Technology. I have also gained proficiency in various computer languages such as
+                HTML, Bootstrap, Microsoft 365, among others."</h6></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero section ends here → -->
+
+
+  <!-- About Us -->
+  <section id="About-me">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+
+
+          <!-- another image can be inserted here -->
+          <img src="MicrosoftTeams-image (5).png" alt="..." width="600px" height="200px" class="img-fluid" />
+        </div>
+        <div class="col">
+          <h1>About Me</h1>
+          <p><h5>"Hi, I am Mridul. I basically live in a small family of three - my father, my mother, and me. I am glad to
+            have such a great family who cares for me more than I could wish for."</h5></p>
+          <p><h5>"I am a college student studying computer engineering at AIT. Although I am mainly focused on my studies, I
+            am also very passionate about sports. My favorite sport is lawn tennis, which I play regularly."</h5></p>
+          <!-- <button type="button" class="btn btn-dark btn-lg">Hire me!</button> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+  <!-- End of About Us -->
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="row align-items-center projects">
+        <div class="col">
+          <h1>Contact me</h1>
+
+
+          <!-- Add icon library -->
+          <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+          <!-- Add font awesome icons -->
+          <!-- <i class="fa-brands fa-square-facebook fa-2x" style="color: #1663e9;"></i> -->
+          <a href="https://www.facebook.com/mridul.langer99?mibextid=ZbWKwL" class="fa fa-facebook fa-2x"></a>
+          <a href="https://www.linkedin.com/in/mridul-langer-2904a0272" class="fa fa-linkedin fa-2x"></a>&nbsp;
+          <a href="https://instagram.com/mridullanger16?igshid=ZDdkNTZiNTM=" class="fa fa-instagram fa-2x"></a>&nbsp;
+          <!-- <a href="https://www.snapchat.com/add/mridul3332?share_id=oLchY5QrEYk&locale=en-US" class="fa fa-snapchat-ghost fa-2x"></a>&nbsp;&nbsp;&nbsp; -->
+          <a href="https://twitter.com/LangerMridul?t=kDg7A8OxhbTHY1HUBSYTMw&s=09"
+            class="fa fa-twitter fa-2x"></a>&nbsp;
+  </section>
+  <!-- End of contact section -->
+  </div>
+  </div>
+  </div>
+  </section>
+</body>
+
+</html>
